@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Birth Weight Prediction</title>
+</head>
+<body>
+    <h1>Predict The Weight Of A New Born Baby</h1>
+    <form action="/predict", method="POST">
+        <label>Gestation</label>
+        <input name = "gestation", type = "number"><br>
+
+        <label>Parity</label>
+        <input name = "parity", type = "number"><br>
+        
+        <label>Age</label>
+        <input name = "age", type = "number"><br>
+        
+        <label>Height</label>
+        <input name = "height", type = "number"><br>
+
+        <label>Weight</label>
+        <input name = "weight", type = "number"><br>
+        
+        <label>Smoke</label>
+        <input name = "smoke", type = "number"><br>
+
+        <button type="submit">Predict Birth Weight</button>
+    </form>
+    <h3>Predicted weight of the baby is - {{prediction}}</h3>
+</body>
+</html>
