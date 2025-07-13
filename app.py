@@ -43,10 +43,12 @@ def get_prediction():
     prediction = model.predict(baby_df)
     prediction = round(float(prediction), 2)
 
+    wt_kg = prediction * 0.283495
+
     #return response in a json format
     response = {"Prediction" : prediction}
     
-    return render_template("index.html", prediction = prediction)
+    return render_template("index.html", prediction = prediction, wt_kg = wt_kg)
 
 
 
