@@ -1,6 +1,6 @@
 # 🍼 Newborn Weight Predictor
 
-A machine learning project that predicts the **birth weight of a newborn baby** based on the physical attributes and habits of the mother, such as height, weight, age, and smoking status.
+My first and very basic machine learning project that predicts the **birth weight of a newborn baby** based on the physical attributes and habits of the mother, such as height, weight, age, and smoking status.
 
 ---
 
